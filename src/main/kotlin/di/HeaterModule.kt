@@ -1,16 +1,17 @@
 package di
 
+import dagger.Binds
 import heater.Heater
 import heater.SmallHeater
 import dagger.Module
 import dagger.Provides
 
 @Module
-interface HeaterModule {
+class HeaterModule {
 
-    //Tried both
+//    Tried both
 //    @Binds
-//    fun bindHeater(heater: heater.SmallHeater): heater.Heater
+//    fun bindHeater(heater: SmallHeater): Heater
 
     @Provides
     fun provideHeater(): Heater {
