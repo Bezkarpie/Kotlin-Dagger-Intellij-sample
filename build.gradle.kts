@@ -10,7 +10,7 @@ group = "me.mkarwowski"
 version = "1.0-SNAPSHOT"
 
 kapt {
-    keepJavacAnnotationProcessors = true
+//    keepJavacAnnotationProcessors = true
 }
 
 repositories {

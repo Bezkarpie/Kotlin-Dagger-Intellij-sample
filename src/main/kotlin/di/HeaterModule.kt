@@ -7,14 +7,18 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-class HeaterModule {
+interface HeaterModule {
 
 //    Tried both
 //    @Binds
 //    fun bindHeater(heater: SmallHeater): Heater
 
-    @Provides
-    fun provideHeater(): Heater {
-        return SmallHeater()
-    }
+
+
+//    companion object {
+//        @Provides
+//        fun provideHeater(): Heater {
+//            return SmallHeater()
+//        }
+//    }
 }
