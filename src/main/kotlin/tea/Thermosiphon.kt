@@ -1,9 +1,12 @@
 package tea
 
+import heater.Heater
+import javax.inject.Inject
+
 //
-//class Thermosiphon @Inject constructor(private val heater: heater.Heater): TeaPump {
+class Thermosiphon @Inject constructor(private val heater: Heater): TeaPump {
 //
-////    private val heater: heater.Heater
+//    private val heater: heater.Heater
 //
 //    //TODO not a primary constructor just for the sake of exploration
 ////    @Inject
@@ -11,10 +14,11 @@ package tea
 ////        this.heater = heater
 ////    }
 //
-//    override fun makeTea(){
-//        heater.heatUp()
-//    }
-//}
+    override fun makeTea(){
+        println("Thermosiphon is working")
+        heater.heatUp()
+    }
+}
 
 //@Provides
 //fun provideHeater(): heater.Heater = heater.SmallHeater()

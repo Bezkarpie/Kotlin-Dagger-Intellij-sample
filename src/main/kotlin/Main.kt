@@ -6,13 +6,16 @@ import heater.SmallHeater
 fun main(args: Array<String>) {
     println("Hello World!")
 
-    val secondModule = SecondModule(SmallHeater())
+//    val secondModule = SecondModule(SmallHeater())
 //    val secondModule = SecondModule(LargeHeater())
 
     val component = DaggerTeaComponent.builder()
-        .secondModule(secondModule)
+//        .secondModule(secondModule)
         .build()
 
 
     component.teaMaker().makeTea()
+    component.thermosiphon().makeTea()
+
+    component.coffeMaker().brew()
 }

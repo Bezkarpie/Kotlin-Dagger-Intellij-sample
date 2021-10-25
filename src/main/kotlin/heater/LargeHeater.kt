@@ -2,7 +2,8 @@ package heater
 
 class LargeHeater: Heater {
     override fun heatUp() {
-        println("Large Heater: SO MUCH HEAT")
+
+        println("Large Heater $this : SO MUCH HEAT")
     }
 
 
